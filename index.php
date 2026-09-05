@@ -15,16 +15,22 @@
                 <img src="assets/images/logo-caminhada-pcd.png" alt="Caminhada PCD e Pet PCD">
             </a>
 
-            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-                <span class="menu-icon" aria-hidden="true">☰</span>
-                <span>Menu</span>
-            </button>
-
             <nav id="site-nav" class="site-nav" aria-label="Navegação principal">
-                <a href="#sobre">Conheça</a>
-                <a href="#programacao">Programação</a>
-                <a href="#apoio">Apoiadores</a>
-                <a class="nav-cta" href="#inscricao">Quero participar</a>
+                <div class="desktop-links">
+                    <a href="#sobre">Conheça</a>
+                    <a href="#programacao">Programação</a>
+                    <a href="#apoio">Apoiadores</a>
+                    <a class="nav-cta" href="#inscricao">Quero participar</a>
+                </div>
+                <details class="mobile-menu">
+                    <summary><span class="menu-icon" aria-hidden="true">☰</span> Menu</summary>
+                    <div class="mobile-links">
+                        <a href="#sobre">Conheça</a>
+                        <a href="#programacao">Programação</a>
+                        <a href="#apoio">Apoiadores</a>
+                        <a class="nav-cta" href="#inscricao">Quero participar</a>
+                    </div>
+                </details>
             </nav>
         </div>
     </header>
@@ -35,10 +41,6 @@
                 <picture class="hero-slide hero-slide-active">
                     <source media="(max-width: 640px)" srcset="assets/images/hero-banner-mobile.png">
                     <img src="assets/images/hero-banner.png" alt="Pessoas e pets participando da Caminhada PCD">
-                </picture>
-                <picture class="hero-slide">
-                    <source media="(max-width: 640px)" srcset="assets/images/hero-memorial-banner-mobile.png">
-                    <img src="assets/images/hero-memorial-banner.png" alt="Homenagem e memória na Caminhada PCD e Pet PCD">
                 </picture>
             </div>
             <div class="container hero-content">
@@ -117,6 +119,5 @@
             <p>Projeto acadêmico de Desenvolvimento Web Responsivo<br><span>© 2026</span></p>
         </div>
     </footer>
-    <script src="assets/js/script.js"></script>
 </body>
 </html>

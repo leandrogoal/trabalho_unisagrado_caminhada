@@ -5,8 +5,8 @@ Página inicial responsiva desenvolvida para o módulo de Bootcamp Desenvolvimen
 ## Funcionalidades
 
 - Navegação por âncoras entre as cinco seções da página.
-- Menu responsivo para smartphones.
-- Hero visual com imagem adaptada para telas menores.
+- Menu responsivo para smartphones usando apenas CSS.
+- Hero visual estático com imagem adaptada para telas menores.
 - Apresentação do propósito, valores e programação do evento.
 - Formulário demonstrativo de interesse, sem armazenamento de dados.
 - Layout responsivo para desktop, tablet e smartphone.
@@ -15,10 +15,9 @@ Página inicial responsiva desenvolvida para o módulo de Bootcamp Desenvolvimen
 
 - HTML5 semântico
 - CSS3 com Grid, Flexbox e media queries
-- JavaScript puro
 - PHP apenas como servidor compatível com o XAMPP
 
-Não foram utilizados frameworks de CSS ou JavaScript.
+Não foram utilizados frameworks. A página inicial funciona sem JavaScript.
 
 ## Como executar
 
@@ -35,7 +34,7 @@ trabalho_unisagrado_caminhada/
 |-- assets/
 |   |-- css/style.css
 |   |-- images/
-|   `-- js/script.js
+|   `--
 |-- index.php
 |-- README.md
 `-- .gitignore
