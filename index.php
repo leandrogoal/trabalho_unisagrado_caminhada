@@ -20,7 +20,7 @@
                     <a href="#sobre">Conheça</a>
                     <a href="#programacao">Programação</a>
                     <a href="#apoio">Apoiadores</a>
-                    <a class="nav-cta" href="#inscricao">Quero participar</a>
+                    <a class="nav-cta" href="#programacao">Ver programação</a>
                 </div>
                 <details class="mobile-menu">
                     <summary><span class="menu-icon" aria-hidden="true">☰</span> Menu</summary>
@@ -28,7 +28,7 @@
                         <a href="#sobre">Conheça</a>
                         <a href="#programacao">Programação</a>
                         <a href="#apoio">Apoiadores</a>
-                        <a class="nav-cta" href="#inscricao">Quero participar</a>
+                        <a class="nav-cta" href="#programacao">Ver programação</a>
                     </div>
                 </details>
             </nav>
@@ -47,7 +47,7 @@
                 <p class="eyebrow">Inclusão em movimento</p>
                 <h1 id="hero-title">Caminhar junto transforma o caminho.</h1>
                 <p class="hero-text">Um encontro para celebrar pessoas, pets e o direito de ocupar todos os espaços com respeito e acessibilidade.</p>
-                <a class="button button-primary" href="#inscricao">Faça parte</a>
+                <a class="button button-primary" href="#programacao">Ver programação</a>
             </div>
         </section>
 
@@ -94,21 +94,7 @@
         <section id="apoio" class="section section-dark" aria-labelledby="apoio-title">
             <div class="container support-layout">
                 <div><p class="eyebrow">Construção coletiva</p><h2 id="apoio-title">Quando a cidade caminha junto, a inclusão avança.</h2></div>
-                <div><p>Este projeto acontece com a participação de pessoas, iniciativas e negócios que acreditam em uma cidade mais acessível.</p><a class="text-link" href="#inscricao">Quero apoiar <span aria-hidden="true">↗</span></a></div>
-            </div>
-        </section>
-
-        <section id="inscricao" class="section section-light" aria-labelledby="inscricao-title">
-            <div class="container registration-panel">
-                <div><p class="eyebrow">Próximo passo</p><h2 id="inscricao-title">Venha caminhar com a gente.</h2><p>As inscrições serão divulgadas em breve. Deixe seu contato para receber as novidades sobre a próxima edição.</p></div>
-                <form class="interest-form" action="#inscricao" method="post">
-                    <label for="nome">Seu nome</label>
-                    <input id="nome" name="nome" type="text" placeholder="Como podemos chamar você?" required>
-                    <label for="email">Seu e-mail</label>
-                    <input id="email" name="email" type="email" placeholder="voce@exemplo.com" required>
-                    <button class="button button-secondary" type="submit">Quero receber notícias</button>
-                    <p class="form-note">Ao enviar, você demonstra interesse no evento. Esta versão inicial não armazena dados.</p>
-                </form>
+                <div><p>Este projeto acontece com a participação de pessoas, iniciativas e negócios que acreditam em uma cidade mais acessível.</p><a class="text-link" href="#apoio">Conheça o apoio <span aria-hidden="true">↗</span></a></div>
             </div>
         </section>
     </main>

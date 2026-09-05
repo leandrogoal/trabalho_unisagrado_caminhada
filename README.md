@@ -8,7 +8,6 @@ Página inicial responsiva desenvolvida para o módulo de Bootcamp Desenvolvimen
 - Menu responsivo para smartphones usando apenas CSS.
 - Hero visual estático com imagem adaptada para telas menores.
 - Apresentação do propósito, valores e programação do evento.
-- Formulário demonstrativo de interesse, sem armazenamento de dados.
 - Layout responsivo para desktop, tablet e smartphone.
 
 ## Tecnologias utilizadas
