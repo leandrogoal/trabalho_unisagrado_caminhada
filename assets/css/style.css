@@ -105,7 +105,7 @@ h2 { margin: 0 0 24px; font-size: clamp(2.2rem, 4vw, 4rem); letter-spacing: -.04
     .mobile-links { position: absolute; top: calc(100% + 12px); right: 0; display: grid; min-width: 210px; padding: 10px 18px 18px; background: var(--paper); border: 1px solid var(--line); box-shadow: 0 12px 30px rgba(23,36,43,.14); }
     .mobile-links a { padding: 10px 0; }
     .mobile-links .nav-cta { text-align: center; margin-top: 8px; }
-    .hero { min-height: 620px; }
+    .hero { min-height: 0; aspect-ratio: 862 / 1824; }
     .hero-media::after { background: transparent; }
     .split-layout, .registration-panel, .support-layout { grid-template-columns: 1fr; gap: 48px; }
     .section { padding: 78px 0; }
@@ -119,4 +119,4 @@ h2 { margin: 0 0 24px; font-size: clamp(2.2rem, 4vw, 4rem); letter-spacing: -.04
     .footer-content { display: block; }
     .footer-content p:last-child { margin-top: 20px; text-align: left; }
 }
-@media (max-width: 480px) { h1 { font-size: 3.1rem; } .hero { min-height: 580px; } .schedule-grid { grid-template-columns: 1fr; } .schedule-item, .schedule-item:nth-child(n) { min-height: auto; padding: 22px 0; border-right: 0; } }
+@media (max-width: 480px) { h1 { font-size: 3.1rem; } .schedule-grid { grid-template-columns: 1fr; } .schedule-item, .schedule-item:nth-child(n) { min-height: auto; padding: 22px 0; border-right: 0; } }
