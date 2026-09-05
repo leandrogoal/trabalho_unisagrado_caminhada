@@ -43,12 +43,6 @@
                     <img src="assets/images/hero-banner.png" alt="Pessoas e pets participando da Caminhada PCD">
                 </picture>
             </div>
-            <div class="container hero-content">
-                <p class="eyebrow">Inclusão em movimento</p>
-                <h1 id="hero-title">Caminhar junto transforma o caminho.</h1>
-                <p class="hero-text">Um encontro para celebrar pessoas, pets e o direito de ocupar todos os espaços com respeito e acessibilidade.</p>
-                <a class="button button-primary" href="#programacao">Ver programação</a>
-            </div>
         </section>
 
         <section id="sobre" class="section section-light" aria-labelledby="sobre-title">
