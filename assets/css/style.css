@@ -89,6 +89,11 @@ h2 { margin: 0 0 24px; font-size: clamp(2.2rem, 4vw, 4rem); letter-spacing: -.04
 .button-secondary { margin-top: 18px; background: var(--ink); color: var(--white); }
 .button-secondary:hover { background: var(--coral-dark); }
 .form-note { color: var(--muted); font-size: .78rem; }
+.registration-list { margin-top: 34px; padding-top: 26px; border-top: 1px solid var(--line); }
+.registration-list h3 { margin: 0 0 16px; font-size: 1.25rem; }
+.registration-list ul { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.registration-list li { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.registration-list span { color: var(--muted); }
 .site-footer { padding: 34px 0; background: #e9e4da; color: var(--muted); font-size: .84rem; }
 .footer-content { display: flex; justify-content: space-between; gap: 24px; }
 .footer-content p { margin: 0; }
@@ -119,4 +124,4 @@ h2 { margin: 0 0 24px; font-size: clamp(2.2rem, 4vw, 4rem); letter-spacing: -.04
     .footer-content { display: block; }
     .footer-content p:last-child { margin-top: 20px; text-align: left; }
 }
-@media (max-width: 480px) { h1 { font-size: 3.1rem; } .schedule-grid { grid-template-columns: 1fr; } .schedule-item, .schedule-item:nth-child(n) { min-height: auto; padding: 22px 0; border-right: 0; } }
+@media (max-width: 480px) { h1 { font-size: 3.1rem; } .schedule-grid { grid-template-columns: 1fr; } .schedule-item, .schedule-item:nth-child(n) { min-height: auto; padding: 22px 0; border-right: 0; } .registration-list li { display: block; } .registration-list span { display: block; margin-top: 3px; } }

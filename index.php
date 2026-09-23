@@ -1,3 +1,30 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['inscritos'])) {
+    $_SESSION['inscritos'] = [];
+}
+
+$mensagemInscricao = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $nome = trim($_POST['nome'] ?? '');
+    $telefone = trim($_POST['telefone'] ?? '');
+
+    if ($nome !== '' && $telefone !== '') {
+        $_SESSION['inscritos'][] = [
+            'nome' => $nome,
+            'telefone' => $telefone,
+        ];
+
+        $mensagemInscricao = 'Inscricao realizada com sucesso!';
+    } else {
+        $mensagemInscricao = 'Preencha nome e telefone para se inscrever.';
+    }
+}
+
+$inscritos = $_SESSION['inscritos'];
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -20,7 +47,8 @@
                     <a href="#sobre">Conheça</a>
                     <a href="#programacao">Programação</a>
                     <a href="#apoio">Apoiadores</a>
-                    <a class="nav-cta" href="#programacao">Ver programação</a>
+                    <a href="#inscricao">Inscrição</a>
+                    <a class="nav-cta" href="#inscricao">Inscrever-se</a>
                 </div>
                 <details class="mobile-menu">
                     <summary><span class="menu-icon" aria-hidden="true">☰</span> Menu</summary>
@@ -28,7 +56,8 @@
                         <a href="#sobre">Conheça</a>
                         <a href="#programacao">Programação</a>
                         <a href="#apoio">Apoiadores</a>
-                        <a class="nav-cta" href="#programacao">Ver programação</a>
+                        <a href="#inscricao">Inscrição</a>
+                        <a class="nav-cta" href="#inscricao">Inscrever-se</a>
                     </div>
                 </details>
             </nav>
@@ -89,6 +118,49 @@
             <div class="container support-layout">
                 <div><p class="eyebrow">Construção coletiva</p><h2 id="apoio-title">Quando a cidade caminha junto, a inclusão avança.</h2></div>
                 <div><p>Este projeto acontece com a participação de pessoas, iniciativas e negócios que acreditam em uma cidade mais acessível.</p><a class="text-link" href="#apoio">Conheça o apoio <span aria-hidden="true">↗</span></a></div>
+            </div>
+        </section>
+
+        <section id="inscricao" class="section section-light" aria-labelledby="inscricao-title">
+            <div class="container registration-panel">
+                <div>
+                    <p class="eyebrow">Inscrição</p>
+                    <h2 id="inscricao-title">Garanta sua presença na caminhada.</h2>
+                    <p>Informe seu nome e telefone para entrar na lista de participantes do evento.</p>
+                </div>
+
+                <div>
+                    <form class="interest-form" action="#inscricao" method="post">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+
+                        <button class="button button-secondary" type="submit">Adicionar inscrição</button>
+
+                        <?php if ($mensagemInscricao !== ''): ?>
+                            <p class="form-note"><?php echo htmlspecialchars($mensagemInscricao, ENT_QUOTES, 'UTF-8'); ?></p>
+                        <?php endif; ?>
+                    </form>
+
+                    <div class="registration-list" aria-live="polite">
+                        <h3>Lista de inscritos</h3>
+
+                        <?php if (count($inscritos) === 0): ?>
+                            <p class="form-note">Nenhuma inscrição cadastrada ainda.</p>
+                        <?php else: ?>
+                            <ul>
+                                <?php foreach ($inscritos as $inscrito): ?>
+                                    <li>
+                                        <strong><?php echo htmlspecialchars($inscrito['nome'], ENT_QUOTES, 'UTF-8'); ?></strong>
+                                        <span><?php echo htmlspecialchars($inscrito['telefone'], ENT_QUOTES, 'UTF-8'); ?></span>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        <?php endif; ?>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
